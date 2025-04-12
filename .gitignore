@@ -1,0 +1,72 @@
+# Terraform
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform/**
+.terraform.lock.hcl
+crash.log
+**/proxmox.yml
+**/openrc*
+**vault**
+
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ansible
+# Roles, logs, temporary files
+*.retry
+*.log
+*.out
+
+# Sensitive inventory or host vars
+inventory/*.ini
+inventory/*.yml
+group_vars/*.yml
+host_vars/*.yml
+
+# Vault
+*.vault
+*.vault.yml
+*.vault.json
+
+# Proxmox
+# Proxmox-specific config
+*.qcow2
+*.iso
+*.vmdk
+*.img
+*.ova
+
+# General
+# Ignore common sensitive files
+*.pem
+*.key
+*.crt
+*.cer
+*.enc
+*.p12
+*.jks
+
+# Ignore common editor/OS temporary files
+*.swp
+*.swo
+.idea/
+*.vscode/
+*.DS_Store
+*.bak
+*.tmp
+*.~*
+
+# Logs and debug files
+*.log
+*.err
+*.debug
+
+# Ignore environment-specific files
+.env
+.env.*
+venv
+
+
